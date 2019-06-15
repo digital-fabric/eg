@@ -45,7 +45,7 @@ o.foo    #=> :baz
 o::VALUE #=> 42
 ```
 
-### defining methods
+### Defining methods
 
 Any prototype key that does not begin with an upper-case letter or `@` is
 considered a method. If the value is a proc or responds to `#to_proc`, it will
@@ -62,7 +62,7 @@ o.foo #=> :bar
 o.bar #=> :baz
 ```
 
-### defining constants
+### Defining constants
 
 Constants are defined using keys that begin with an upper-case letter:
 
@@ -86,7 +86,7 @@ o = EG.(
 o.a(2) #=> 3
 ```
 
-### defining instance variables
+### Defining instance variables
 
 Instance variables are defined using keys that begin with an `@`:
 
